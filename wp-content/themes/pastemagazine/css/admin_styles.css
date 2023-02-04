@@ -1,0 +1,77 @@
+.acf-field[data-name='artist'] > .acf-label {
+  display: none;
+}
+
+tr.inline-edit-row:before {
+  content: "";
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+}
+
+tr.inline-edit-row td {
+  position: fixed;
+  width: 90vw;
+  background: #fefffe;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 9999;
+  overflow-y: scroll;
+  max-height: 90vh;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5) !important;
+}
+
+tr.inline-edit-row .submit.inline-edit-save {
+  background-color: #fffa9d;
+}
+
+.wp-list-table.posts #title {
+  width: 400px;
+}
+
+#import_percent div {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  border: 1px solid #000;
+}
+
+#import_percent i {
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #ffcc00;
+  z-index: 0;
+  transition: width 0.5s;
+}
+
+#import_percent.delete i {
+  background: #c1001b;
+}
+
+#import_percent.makelive i {
+  background: #2FC436;
+}
+
+#import_percent p {
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #444;
+  margin: 0;
+  position: relative;
+}
+
+#import_percent.delete p {
+  text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff;
+}
