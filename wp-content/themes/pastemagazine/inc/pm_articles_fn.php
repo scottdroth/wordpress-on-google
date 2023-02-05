@@ -25,6 +25,7 @@ function pm_list_articles($args)
 
     $adFreq = isset($ad_freq) ? $ad_freq : 0;
     $articleCatSQL = "";
+    $adSlotIndex = 0;
     if (!isset($articles)) {
 
         $articleCatSQL = !empty($article_cat) ? " AND article_category LIKE '%|$article_cat|%' " : "";
